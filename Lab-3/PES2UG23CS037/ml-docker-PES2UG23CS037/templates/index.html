@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detection ML App</title>
+    <style>
+        body {
+            background-color: #1e3a8a; /* blue */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PES2UG23CS037</h1>
+
+    <h2>Spam Detection using ML (Dockerized)</h2>
+
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter message" size="45" required>
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
+
